@@ -21,6 +21,10 @@ nano /etc/XrayR/config.yml
 ```
 Hoặc dùng phím 14 để config auto
 ```
+```
+```
+Đã add fix lỗi zalo 
+```
 Hoặc gọi xrayr rồi bấm phím `0`
 
 1: dòng `PanelType` : Tên kiểu web (ví dụ `V2board`, `SSpanel`,... chữ đầu viết hoa)
