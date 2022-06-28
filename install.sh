@@ -136,7 +136,7 @@ install_XrayR() {
     chmod +x XrayR
     mkdir /etc/XrayR/ -p
     rm /etc/systemd/system/XrayR.service -f
-    file="https://xrayr.ezdigi.vn/AikoXrayR/XrayR.service"
+    file="https://ezdigi.vn/AikoXrayR/XrayR.service"
     wget -N --no-check-certificate -O /etc/systemd/system/XrayR.service ${file}
     #cp -f XrayR.service /etc/systemd/system/
     systemctl daemon-reload
@@ -149,7 +149,7 @@ install_XrayR() {
     if [[ ! -f /etc/XrayR/config.yml ]]; then
         cp config.yml /etc/XrayR/
         echo -e ""
-        echo -e "Cài đặt mới, vui lòng tham khảo hướng dẫn trước：https://xrayr.ezdigi.vn/AikoXrayR，Định cấu hình nội dung cần thiết"
+        echo -e "Cài đặt mới, vui lòng tham khảo hướng dẫn trước：https://ezdigi.vn/AikoXrayR，Định cấu hình nội dung cần thiết"
     else
         systemctl start XrayR
         sleep 2
